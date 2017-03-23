@@ -1,0 +1,57 @@
+<idea-plugin version="2">
+  <id>com.your.company.unique.plugin.id</id>
+  <name>Plugin display name here</name>
+  <version>1.0</version>
+  <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+
+  <description><![CDATA[
+      Enter short description for your plugin here.<br>
+      <em>most HTML tags may be used</em>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="141.0"/>
+
+  <depends>org.jetbrains.idea.maven</depends>
+
+
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <!--<extensions defaultExtensionNs="com.intellij">
+    <toolWindow id="CheckPluginToolWindow" anchor="bottom"/>
+  </extensions>-->
+
+  <actions>
+    <!-- Add your actions here -->
+   <action id="Check_Action" class="CheckAction" text="Run Check">
+      <add-to-group group-id="ToolsMenu" anchor="first"/>
+    </action>
+
+   <!-- <action id="check_task" class="CheckTask" text="CheckTask">
+      <add-to-group group-id="ToolbarRunGroup" anchor="first"/>
+    </action>-->
+  </actions>
+
+<!--
+  <project-components>
+      <component>
+          <implementation-class>org.jetbrains.idea.maven.execution.MavenRunner</implementation-class>
+        </component>
+    <component>
+      <implementation-class>org.jetbrains.idea.maven.project.MavenProjectsManager</implementation-class>
+    </component>
+
+  </project-components>
+-->
+</idea-plugin>
